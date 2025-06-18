@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-openai.api_key = os.getenv("open-ai")
+openai.api_key = st.secrets["open-ai"]
 
 st.title("🎨 AI Content Studio")
 
